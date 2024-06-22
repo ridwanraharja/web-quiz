@@ -1,0 +1,30 @@
+/* POINTS */
+.navbarSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarSection .points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-color: #f4f3f6;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.navbarSection .points .pointsImage {
+  width: 14px;
+  height: 14px;
+}
+
+.navbarSection .points p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbarSection h2 {
+  font-size: 18px;
+  font-weight: 600;
+}

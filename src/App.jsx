@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import styles from "./App.module.css";
+import Navbar from "./components/Navbar/Navbar";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
+import Options from "./components/Options/Options";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [selectOption, setSelectOption] = useState();
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className={styles.app}>
+        <div className={styles.container}>
+          <Navbar points={300} />
+          <ProgressBar />
+          {/* QUESTIONS */}
+          <div className={styles.questions}>
+            <h3>PREDICT THE TOP LOSER (for tomorrow) across these indices</h3>
+          </div>
+          <Options
+            selectOption={selectOption}
+            setSelectOption={setSelectOption}
+          />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
