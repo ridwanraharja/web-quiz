@@ -1,0 +1,116 @@
+/* Homepage */
+.homepage {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/thumbnail.png") left no-repeat
+    padding-box content-box;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.homepage .homepageContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+}
+
+.homepage .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding: 0 0 0 70px;
+}
+
+.homepage .container .title {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f4f3f6;
+  background-color: #45c486;
+  max-width: fit-content;
+  padding: 2px 11px;
+  border-radius: 8px;
+}
+
+.homepage .container .hr {
+  width: 70%;
+  height: 4px;
+  background-image: linear-gradient(to right, #92e3a9, #f4f3f600);
+  margin-top: 16px;
+  border-radius: 15px;
+}
+
+.homepage .container h2 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #94dcab;
+  margin-top: 10px;
+}
+
+.homepage .container .startBtn {
+  align-items: center;
+  background-color: #31cd63;
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #f4f3f6;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: fit-content;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 0px 40px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.homepage .container .startBtn:hover
+/* ,:global(.primaryBtn:focus)  */ {
+  background-color: #26a04c;
+  color: #f4f3f6;
+}
+
+.homepage .particle1 {
+  display: none;
+}
+
+.homepage .particle2 {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .homepage .particle1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 432px; */
+    height: 90%;
+    z-index: 2;
+  }
+
+  .homepage .particle2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    height: 70%;
+    /* width: 316px; */
+  }
+}

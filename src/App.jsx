@@ -1,25 +1,51 @@
 import { useState } from "react";
 import styles from "./App.module.css";
-import Navbar from "./components/Navbar/Navbar";
-import ProgressBar from "./components/ProgressBar/ProgressBar";
-import Options from "./components/Options/Options";
+import data from "./data/data.json";
+import Quiz from "./components/Quiz/Quiz";
+import Homepage from "./components/Homepage/Homepage";
+import Results from "./components/Results/Results";
 
 function App() {
-  const [selectOption, setSelectOption] = useState();
+  const questions = data;
+
+  const [selectOption, setSelectOption] = useState(null);
+  const [stage, setStage] = useState("ready");
+  const [selectedQuestion, setSelectedQuestion] = useState(0);
+  const [points, setPoints] = useState(0);
+  const numberOfQuestions = questions.length;
+
+  const resetQuiz = () => {
+    setSelectOption(null);
+    setSelectedQuestion(0);
+    setPoints(0);
+    setStage("ready");
+  };
+
   return (
     <>
       <div className={styles.app}>
         <div className={styles.container}>
-          <Navbar points={300} />
-          <ProgressBar />
-          {/* QUESTIONS */}
-          <div className={styles.questions}>
-            <h3>PREDICT THE TOP LOSER (for tomorrow) across these indices</h3>
-          </div>
-          <Options
-            selectOption={selectOption}
-            setSelectOption={setSelectOption}
-          />
+          {stage === "ready" && <Homepage setStage={setStage} />}
+          {stage === "start" && (
+            <Quiz
+              points={points}
+              setPoints={setPoints}
+              question={questions[selectedQuestion]}
+              selectedQuestion={selectedQuestion}
+              setSelectedQuestion={setSelectedQuestion}
+              selectOption={selectOption}
+              setStage={setStage}
+              setSelectOption={setSelectOption}
+              numberOfQuestions={numberOfQuestions}
+            />
+          )}
+          {stage === "finish" && (
+            <Results
+              setStage={setStage}
+              points={points}
+              resetQuiz={resetQuiz}
+            />
+          )}
         </div>
       </div>
     </>

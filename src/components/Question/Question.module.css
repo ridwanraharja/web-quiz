@@ -1,0 +1,19 @@
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 64px;
+}
+
+.questions h3 {
+  color: #191d63;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .questions h3 {
+    width: 50%;
+    text-align: center;
+  }
+}

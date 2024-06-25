@@ -23,7 +23,7 @@
   margin-bottom: 30px;
 }
 
-.options .optionItem p {
+.options p {
   font-size: 16px;
   font-weight: 600;
 }
@@ -36,4 +36,17 @@
   gap: 16px;
   align-items: center;
   color: #f4f3f6;
+}
+
+@media (min-width: 768px) {
+  .options {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .options {
+    width: 50%;
+  }
 }

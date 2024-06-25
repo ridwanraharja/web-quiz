@@ -3,7 +3,7 @@ import { FaXmark } from "react-icons/fa6";
 import styles from "./Navbar.module.css";
 import pointsImage from "../../assets/images/points.png";
 
-function Navbar({ points }) {
+function Navbar({ points, setStage }) {
   return (
     <div className={styles.navbarSection}>
       <div className={styles.points}>
@@ -11,7 +11,7 @@ function Navbar({ points }) {
         <p>{points}</p>
       </div>
       <h2>Quizzer</h2>
-      <CustomIcon>
+      <CustomIcon setStage={setStage}>
         <FaXmark />
       </CustomIcon>
     </div>

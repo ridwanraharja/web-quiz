@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Apa itu investasi?",
+    "options": [
+      "Menabung uang di bank",
+      "Membeli barang untuk dijual kembali",
+      "Menanamkan modal untuk mendapatkan keuntungan di masa depan"
+    ],
+    "answer": 2,
+    "points": 100
+  },
+  {
+    "question": "Apa tujuan utama dari investasi?",
+    "options": [
+      "Menghabiskan uang",
+      "Mendapatkan keuntungan",
+      "Menyimpan uang di rumah"
+    ],
+    "answer": 1,
+    "points": 100
+  },
+  {
+    "question": "Apa itu saham?",
+    "options": [
+      "Surat utang",
+      "Kepemilikan sebagian dari perusahaan",
+      "Tabungan di bank"
+    ],
+    "answer": 1,
+    "points": 100
+  },
+  {
+    "question": "Apa itu obligasi?",
+    "options": [
+      "Surat utang yang diterbitkan oleh perusahaan atau pemerintah",
+      "Kepemilikan properti",
+      "Investasi dalam bentuk emas"
+    ],
+    "answer": 0,
+    "points": 100
+  },
+  {
+    "question": "Apa itu reksa dana?",
+    "options": [
+      "Investasi dalam bentuk properti",
+      "Kumpulan dana dari banyak investor untuk diinvestasikan dalam berbagai instrumen keuangan",
+      "Membeli barang antik"
+    ],
+    "answer": 1,
+    "points": 100
+  },
+  {
+    "question": "Apa keuntungan utama dari diversifikasi investasi?",
+    "options": [
+      "Mengurangi risiko",
+      "Meningkatkan risiko",
+      "Mengurangi keuntungan"
+    ],
+    "answer": 0,
+    "points": 100
+  },
+  {
+    "question": "Apa itu return on investment (ROI)?",
+    "options": [
+      "Jumlah uang yang diinvestasikan",
+      "Keuntungan atau kerugian dari investasi dibandingkan dengan jumlah uang yang diinvestasikan",
+      "Biaya investasi"
+    ],
+    "answer": 1,
+    "points": 100
+  },
+  {
+    "question": "Apa itu pasar modal?",
+    "options": [
+      "Tempat jual beli barang",
+      "Tempat jual beli surat berharga seperti saham dan obligasi",
+      "Tempat menabung uang"
+    ],
+    "answer": 1,
+    "points": 100
+  },
+  {
+    "question": "Apa itu risiko investasi?",
+    "options": [
+      "Kemungkinan kehilangan sebagian atau seluruh modal yang diinvestasikan",
+      "Keuntungan yang pasti",
+      "Jumlah uang yang diinvestasikan"
+    ],
+    "answer": 0,
+    "points": 100
+  },
+  {
+    "question": "Apa itu likuiditas dalam investasi?",
+    "options": [
+      "Kemampuan untuk mengubah investasi menjadi uang tunai dengan cepat tanpa kehilangan nilai",
+      "Jumlah uang yang diinvestasikan",
+      "Keuntungan dari investasi"
+    ],
+    "answer": 0,
+    "points": 100
+  }
+]

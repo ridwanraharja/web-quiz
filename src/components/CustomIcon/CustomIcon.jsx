@@ -5,6 +5,8 @@ function CustomIcon({
   color = "black",
   bg = "white",
   width = "26px",
+  setStage,
+  resetQuiz,
 }) {
   return (
     <>
@@ -15,6 +17,9 @@ function CustomIcon({
           backgroundColor: bg,
           width: width,
           height: width,
+        }}
+        onClick={() => {
+          setStage("ready") || resetQuiz();
         }}
       >
         {children}

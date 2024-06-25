@@ -1,12 +1,16 @@
 import styles from "./ProgressBar.module.css";
-function ProgressBar() {
+function ProgressBar({ numberOfQuestions, selectedQuestion }) {
   return (
     <div className={styles.progressBar}>
-      <progress className={styles.progress} id="progress" value="1" max="5">
-        {" "}
-        32%{" "}
-      </progress>
-      <label htmlFor="progress">1/5</label>
+      <progress
+        className={styles.progress}
+        id="progress"
+        value={selectedQuestion + 1}
+        max={numberOfQuestions}
+      ></progress>
+      <label htmlFor="progress">
+        {selectedQuestion + 1}/{numberOfQuestions}
+      </label>
     </div>
   );
 }

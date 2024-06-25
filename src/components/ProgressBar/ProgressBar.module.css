@@ -32,3 +32,12 @@
 .progressBar progress::-moz-progress-bar {
   /* style rules */
 }
+
+@media (min-width: 768px) {
+  .progressBar {
+    margin-top: 0;
+  }
+  .progressBar progress {
+    width: 240px;
+  }
+}
