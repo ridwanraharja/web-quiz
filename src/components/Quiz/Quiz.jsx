@@ -44,6 +44,9 @@ function Quiz({
           disabled={selectOption === null}
           onClick={() => {
             if (selectedQuestion === numberOfQuestions - 1) {
+              if (selectOption === item.answer) {
+                setPoints((state) => state + item.points);
+              }
               setSelectedQuestion(0);
               return setStage("finish");
             }
@@ -71,6 +74,9 @@ function Quiz({
             disabled={selectOption === null}
             onClick={() => {
               if (selectedQuestion === numberOfQuestions - 1) {
+                if (selectOption === item.answer) {
+                  setPoints((state) => state + item.points);
+                }
                 setSelectedQuestion(0);
                 return setStage("finish");
               }
